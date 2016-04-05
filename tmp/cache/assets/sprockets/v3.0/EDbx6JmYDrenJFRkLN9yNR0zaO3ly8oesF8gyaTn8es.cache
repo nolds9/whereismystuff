@@ -1,0 +1,32 @@
+{:uriI"‰file://app/assets/javascripts/stuff/createprofile.html?type=text/html&id=f9e5b2c787c1f45fb428e645178f3e4ea48c3a9877bb34620827a0e6dcd2e1f0:ET:load_pathI"app/assets/javascripts;T:filenameI"4app/assets/javascripts/stuff/createprofile.html;T:	nameI"stuff/createprofile;T:logical_pathI"stuff/createprofile.html;T:content_typeI"text/html;T:sourceI"š
+<link rel="stylesheet" type="text/css" href="js/stuff/createprofile.css"/>
+
+<div id="profile-image">
+  <div class="image"></div>
+  <h3 class="user-name">Username</h3>
+  <form class="upload-image">
+    <input type="text" name="upload-image" placeholder="input your image url...."></input>
+    <button type="button" class="save-button"> SAVE </button>
+  </form>
+</div>
+
+<div class="create-profile">
+  <h3> Join Other Dudes and Create A Profile....</h3>
+  <form class="create-profile-form">
+  <table>
+  <tr><td class="text">First Name:</td><td> <input type="text" class="one-forth-input first-name" name="first-name" placeholder="First Name...."></input></td></tr>
+
+  <tr><td class="text">Last Name:</td><td> <input type="text" class="one-forth-input last-name" name="last-name" placeholder="Last Name...."></input></td></tr>
+
+  <tr><td class="text">Username:</td><td> <input type="text" class="one-forth-input create-username" name="user-name" placeholder="Choose a username...."></input></td></tr>
+
+  <tr><td class="text">Email:</td><td> <input type="text" class="one-forth-input email" name="Email" placeholder="What's your email?"></input></td></tr>
+</table>
+  </form>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Bfile-digest://app/assets/javascripts/stuff/createprofile.html;TT:charsetI"
+utf-8;F:digest"%]Ö[åp¢<s×”dWêãâ9ø´kÅÎ9éæCëc
+:lengthiš:dependencies_digest"%”9ÌÐÌXW\þ*ðØ4ic£Ðž{-|mümì>‡'c:;-:idI"Ef9e5b2c787c1f45fb428e645178f3e4ea48c3a9877bb34620827a0e6dcd2e1f0;F:
+mtimel+£ÂW

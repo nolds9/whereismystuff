@@ -1,0 +1,70 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+  background-color: #FFEB3B;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.item-image  {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 600px;
+}
+
+#profile-image {
+    float: left;
+    margin-top: 5%;
+    width: 20%;
+    height: auto;
+    margin-left: 8%;
+    text-align: center;
+  }
+
+  .image{
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 600px;
+  margin: auto;
+}
+
+.user-name {
+  margin-top: 20px;
+}
+
+.items-list input {
+  padding: 5px 10px;
+}
+
+.lost-button {
+  padding: 3px 0px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  width: 75px;
+}
+
+.found-button {
+  padding: 3px 0px;
+  background-color: #FF5722;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  width: 75px;
+}
+
+.user-profile {
+  margin-top: 4%;
+  display: inline-block;
+  float: right;
+  padding-right: 15%;
+}

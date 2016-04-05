@@ -1,0 +1,43 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+#wrapper {
+  width: 800px;
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: #8BC34A;
+}
+
+h1 {
+  color: #F44336;
+  font-size: 42px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.sign-up {
+  padding: 12px;
+  color: white;
+  background-color: #F44336;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1% 1%;
+  border: 3px solid #CDDC39;
+  width: 300px;
+  }
+
+  .font-size-21 {
+    margin-top: 1%;
+    margin-bottom: 10%;
+    font-size: 18px;
+  }

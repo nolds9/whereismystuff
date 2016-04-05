@@ -1,0 +1,2 @@
+[{testItem1 = Item.create!(name: "bicycle", barcode: "3659878", photo_url: "www.google.com", status: "false")},
+{testItem2 = Item.create!(name: "cell phone", barcode: "2345688", photo_url: "www.google.com", status: "true")}]

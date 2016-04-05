@@ -1,0 +1,33 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+#wrapper {
+  width: 800px;
+  margin: auto;
+  margin-top: 20%;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: #E91E63;
+}
+
+h1 {
+  color: #FFEB3B;
+  font-size: 42px;
+  text-align: center;
+}
+
+.refer-friend {
+  padding: 12px;
+    color: white;
+    background-color: #00BCD4;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1% 1%;
+    border: 3px solid yellow;
+    width: 200px;
+  }
