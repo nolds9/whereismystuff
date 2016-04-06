@@ -41,5 +41,3 @@ end
 # def item_params
 #   params.require(:item).permit(:name, :barcode, :photo_url)
 # end
-
-end
