@@ -11,5 +11,13 @@ Item.destroy_all
 user_data = JSON.parse(File.read("db/user_data.json"))
 item_data = JSON.parse(File.read("db/item_data.json"))
 
-User.create!(user_data)
-Item.create!(item_data)
+user_data.each do |user|
+  u = User.create!(user)
+end
+
+random_user = User.all.sample
+
+item_data.each do |item|
+ i = Item.create!(item)
+ i.update(user: random_user)
+end
