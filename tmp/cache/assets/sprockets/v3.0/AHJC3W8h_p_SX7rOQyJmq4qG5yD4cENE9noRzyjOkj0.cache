@@ -1,30 +1,0 @@
-{:uriI"€file://app/assets/javascripts/stuff/home.html?type=text/html&id=0961495d6b6f1744135aa95b995d6f21a2b8eb62e4d2e5d60362ec5c6c10c797:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/stuff/home.html;T:	nameI"stuff/home;T:logical_pathI"stuff/home.html;T:content_typeI"text/html;T:sourceI"€<!-- <link rel="stylesheet" type="text/css" href="js/stuff/home.css"/>
-
-<div id="wrapper">
-<div id="left-side">
-  <img src="/key_image.png" class="site_image"></image>
-<h1 class="site_title"> Dude, Where's My Stuff?</h1>
-
-
-<h2 style="margin-top: 8%;"> Sign In</h2> <br>
-<form>
-  <h3>Username</h3>
-  <input type="text" name="username">
-  <h3>Email</h3>
-  <input type="text" name="email">
-</form>
-<p> not a member? <a href="#">create an account.</a></p>
-</div>
-
-<div id="right-side">
-<h1 class="found_something"> Found Something? </h1>
-<button type="button" class="found_button"> YES, CONTACT OWNER </button>
-</div>
-</div> -->
-<h1> test</h1>
-;T:metadata{	:dependencieso:Set:
-@hash{
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"9file-digest://app/assets/javascripts/stuff/home.html;TT:charsetI"
-utf-8;F:digest"%'Æ¸—çª Fp¯xa¸u8=Èñ2dy/`VZÝ¡d:lengthi€:dependencies_digest"%DfåEµÀ?fÎl¬5®_‘lâB¦e
-Ðð’TR\zÛ`:idI"E0961495d6b6f1744135aa95b995d6f21a2b8eb62e4d2e5d60362ec5c6c10c797;F:
-mtimel+¼W
