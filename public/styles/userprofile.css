@@ -44,6 +44,15 @@ body {
   padding: 5px 10px;
 }
 
+.register-button {
+  padding: 3px 0px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  width: 75px;
+}
+
 .lost-button {
   padding: 3px 0px;
   background-color: red;
