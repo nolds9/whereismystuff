@@ -15,7 +15,19 @@
       <tr>
 
         <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="Item Name...."></input></td>
-        <td> <button type="button" class="register-button"> Register </button> </td>
+
+        <!-- creating register button and generating random number -->
+        <td> <button onclick="myFunction()">Register</button> </td>
+        <p id="list-of-items"></p>
+
+<script>
+function myFunction() {
+    var barcode = document.getElementById("list-of-items")
+    barcode.innerHTML = Math.floor((Math.random() * 100000) + 10000);
+}
+</script>
+
+<!-- end generate random number -->
 
       </tr>
 
