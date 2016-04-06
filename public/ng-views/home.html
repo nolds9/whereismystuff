@@ -9,9 +9,9 @@
 <form>
   <h3>Username</h3>
   <input type="text" name="username">
-  <h3>Email</h3>
-  <input type="text" name="email">
-  <button id = sign-in>Sign In </button>
+  <h3>User Id</h3>
+  <input type="text" name="id" data-ng-model=stuffIndexViewModel.authUser.id>
+  <button id ="sign-in" data-ng-click="stuffIndexViewModel.signIn()">Sign In </button>
 </form>
 <p> not a member? <a data-ui-sref="createProfileIndex">create an account.</a></p>
 </div>

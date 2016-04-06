@@ -39,7 +39,7 @@
       controllerAs: "createProfileViewModel"
     })
     .state("userProfileIndex", {
-      url: "/user-profile",
+      url: "/user-profile/:id",
       templateUrl: "/ng-views/userprofile.html",
       controller: "userProfileController",
       controllerAs: "userProfileViewModel"
