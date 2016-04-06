@@ -5,15 +5,17 @@
   .module("createProfile")
   .controller("createProfileController",[
     "UserFactory",
+    "$state",
     createProfileControllerFunction
   ])
 
 
-  function createProfileControllerFunction(UserFactory){
-    this.user= new UserFactory();
+  function createProfileControllerFunction(UserFactory, $state){
+    this.newUser = new UserFactory();
     this.create = function() {
-    this.user.$save()
-    console.log(this.User);
+      this.newUser.$save().then(function(user){
+        $state.go("userProfileIndex", {id: user.id})
+      })
     }
    }
 })();
