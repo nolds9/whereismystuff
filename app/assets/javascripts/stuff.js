@@ -23,11 +23,6 @@
     RouterFunction
   ])
 
-  // .factory("UserFactory", [
-  //   "$resource",
-  //   ResourceFactoryFunction
-  // ])
-
   function RouterFunction ($stateProvider) {
     $stateProvider
     .state("homeIndex", {
@@ -72,14 +67,6 @@
       templateUrl: "/ng-views/thanksforreporting.html",
       controller: "thanksForReportingController",
       controllerAs: "thanksForReportingViewModel"
-    });
-
-    function ResourceFactoryFunction($resource) {
-      var User = $resource("http://localhost:3000/users/:id.json", {}, {
-        update: {method: "PUT"}
-      });
-      User.all = User.query()
-      return User;
-    }
-  }
-  })();
+    })
+  };
+})();
