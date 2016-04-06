@@ -4,7 +4,7 @@
 
     <div id="profile-image">
       <div class="image"></div>
-      <h3 class="user-name">Username</h3>
+      <h3 class="user-name">{{username}}</h3>
       <form class="upload-image">
         <input type="text" name="upload-image" placeholder="input your image url...."></input>
         <button type="button" class="save-button"> SAVE </button>
@@ -16,39 +16,41 @@
       <form class="create-profile-form">
         <table>
           <tr>
-            <td data-ng-model="createProfileViewModel.newUser.first_name" class="text">First Name:</td>
-            <td> <input type="text" class="one-forth-input first-name" name="first-name" placeholder="First Name...."></input>
+            <td class="text">First Name:</td>
+            <td> <input data-ng-model="createProfileViewModel.newUser.first_name" type="text" class="one-forth-input first-name" name="first-name" placeholder="First Name...."></input>
             </td>
           </tr>
 
           <tr>
-            <td data-ng-model="createProfileViewModel.newUser.last_name" class="text">Last Name:</td>
-            <td> <input type="text" class="one-forth-input last-name" name="last-name" placeholder="Last Name...."></input>
+            <td class="text">Last Name:</td>
+            <td> <input data-ng-model="createProfileViewModel.newUser.last_name" type="text" class="one-forth-input last-name" name="last-name" placeholder="Last Name...."></input>
             </td>
           </tr>
 
           <tr>
-            <td data-ng-model="createProfileViewModel.newUser.username" class="text">Username:</td>
-            <td> <input type="text" class="one-forth-input create-username" name="user-name" placeholder="Choose a username...."></input>
+            <td  class="text">Username:</td>
+            <td> <input data-ng-model="createProfileViewModel.newUser.username" type="text" class="one-forth-input create-username" name="user-name" placeholder="Choose a username...."></input>
             </td>
           </tr>
 
           <tr>
-            <td data-ng-model="createProfileViewModel.newUser.email" class="text">Email:</td>
-            <td> <input type="text" class="one-forth-input email" name="Email" placeholder="What's your email?"></input>
+            <td class="text">Email:</td>
+            <td> <input data-ng-model="createProfileViewModel.newUser.email" type="text" class="one-forth-input email" name="Email" placeholder="What's your email?"></input>
            </td></tr>
 
-          <tr><td data-ng-model="createProfileViewModel.newUser.city" class="text">City:</td>
-            <td> <input type="text" class="one-forth-input city" name="city" placeholder="City"></input>
+          <tr><td class="text">City:</td>
+            <td> <input data-ng-model="createProfileViewModel.newUser.city" type="text" class="one-forth-input city" name="city" placeholder="City"></input>
             </td></tr>
 
-            <tr><td data-ng-model="createProfileViewModel.newUser.state" class="text">State:</td>
-              <td> <input type="text" class="one-forth-input state" name="state" placeholder="State"></input>
+            <tr><td class="text">State:</td>
+              <td> <input data-ng-model="createProfileViewModel.newUser.state" type="text" class="one-forth-input state" name="state" placeholder="State"></input>
               </td></tr>
-
-              <td data-ng-model="createProfileViewModel.newUser.country"> <input type="text" class="one-forth-input country" name="country" placeholder="Country"></input>
+              <tr><td class="text">Country:</td>
+              <td> <input data-ng-model="createProfileViewModel.newUser.country" type="text" class="one-forth-input country" name="country" placeholder="Country"></input>
               </td></tr>
         </table>
-        <button data-ng-click="createProfileViewModel.create()" type="button">Create Profile</button>
+        <!-- <a data-ui-sref="userProfileIndex({id: user.id})"> -->
+          <button data-ng-click="createProfileViewModel.create()" type="button">Create Profile</button>
+        <!-- </a> -->
       </form>
     </div>
