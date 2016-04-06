@@ -1,14 +1,12 @@
 
-<!-- need to show user and index associated items on this page -->
+<!-- show user AND user's items (index) -->
 
-<%= @user.name %>. <%= link_to "Edit", item_path(@user) %> <%= link_to "Delete", item_path(@item), method: :delete %></h2>
+<!-- <%= @user.name %>. <%= link_to "Edit", item_path(@user) %> <%= link_to "Delete", item_path(@item), method: :delete %> -->
 
-<!-- display season to plant -->
-<h3>I prefer to be planted in <%= @crop.season.name %>!</h3>
-<%= image_tag @crop[:img_url] %>
-
-<% @crops.each do |crop| %>
+<!-- display user items -->
+<!-- <%= image_tag @item[:photo_url] %>
+<% @item.each do |item| %>
   <ul>
-    <%= link_to "#{crop.name}", crop %>
+    <%= link_to "#{item.name}", item %>
   </ul>
-<% end %>
+<% end %> -->
