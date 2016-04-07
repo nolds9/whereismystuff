@@ -85,3 +85,17 @@ body {
   font-size: 18px;
   display: inline;
 }
+
+
+.new_input {
+  background: white;
+  border: 1px solid lightgray;
+  font-size: 13px;
+  padding-left: 12px;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: 300;
+  font-size: 12px;
+}

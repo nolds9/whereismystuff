@@ -1,3 +1,2 @@
-
-[{"first_name":"Sheila","last_name":"Jones","username":"test1","email":"test@test.com","city":"Seattle","state":"Washington","country":"US","photo_url":"http://www.fillmurray.com/200/200"},
-  {"first_name":"Thomas","last_name":"Willard","username":"test2","email":"testagain@test.com","city":"Annapolis","state":"Maryland","country":"US","photo_url":"http://www.fillmurray.com/200/300"}]
+[{"first_name":"Sheila","last_name":"Jones","username":"SheilaJ","email":"sheila76@gmail.com","city":"Seattle","state":"Washington","country":"United States","photo_url":"http://www.fillmurray.com/200/200"},
+  {"first_name":"Thomas","last_name":"Willard","username":"ThomasW","email":"thomas-too@hotmail.com","city":"Annapolis","state":"Maryland","country":"United States","photo_url":"http://www.fillmurray.com/200/300"}]
