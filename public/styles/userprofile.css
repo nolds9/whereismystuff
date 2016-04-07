@@ -51,6 +51,8 @@ body {
   font-weight: 600;
   font-size: 14px;
   width: 75px;
+  margin-left: 11px;
+
 }
 
 .lost-button {
@@ -62,7 +64,7 @@ body {
   width: 75px;
 }
 
-.found-button, .register-button {
+.found-button {
   padding: 3px 0px;
   background-color: #FF5722;
   color: white;
@@ -79,7 +81,7 @@ body {
 }
 .register {
   padding-left: 60px;
-    font-weight: 600;
-    font-size: 18px;
-    display: inline;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline;
 }
