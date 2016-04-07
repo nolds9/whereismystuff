@@ -2,31 +2,45 @@
 
 (function(){
   angular
-  .module("userProfile",[])
+  .module("userProfile",[
+    "ui.router",
+    "ngResource"
+  ])
   .controller("userProfileController",[
-    "userFactory",
+    "UserFactory",
+    "$stateParams",
     userProfileControllerFunction
   ]);
 
-  function userProfileControllerFunction(userFactory){
-    this.users= userFactory.query();
-    console.log("User profile works");
-    this.items = [
-       {name: "backpack", barcode: 122345},
-       {name: "suitcase", barcode: 452324},
-       {name: "laptop", barcode: 112131},
-       {name: "barbie doll", barcode: 193434},
-       {name: "camera", barcode: 981341},
-       {name: "cell-phone", barcode: 873430}
-     ]
-
-    this.newItem = {};
-    this.addItem = function () {
-       this.newItem.barcode = Math.floor((Math.random() * 100000) + 10000);
-       this.newItem.name = this.newItem.name
-       this.items.push(angular.copy(this.newItem))
-       this.newItem = {}
+  function userProfileControllerFunction(User, $stateParams){
+    var userVM = this;
+    this.items = []
+    User.all.$promise.then(function(){
+      User.all.forEach(function(user){
+        if(user.id == $stateParams.id){
+          console.log("found user", user)
+          userVM.newItem = {};
+          userVM.addItem = function () {
+             userVM.newItem.barcode = Math.floor((Math.random() * 100000) + 10000);
+             userVM.newItem.name = userVM.newItem.name
+             userVM.items.push(angular.copy(userVM.newItem))
+             userVM.newItem = {}
+             console.log(newItem.name)
+          }
+          userVM.user=user;
+        }
+      });
+    });
     }
 
-  }
+  // function showCtrlFunction(Destination, $stateParams){
+  //   var showVM = this;
+  //   Destination.all.$promise.then(function(){
+  //     Destination.all.forEach(function(destination){
+  //       if(destination.id == $stateParams.id){
+  //         showVM.destination = destination;
+  //       }
+  //     });
+  //   });
+  // }
 })();

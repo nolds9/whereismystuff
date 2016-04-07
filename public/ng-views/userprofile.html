@@ -3,7 +3,7 @@
 <div id="wrapper">
       <div id="profile-image">
       <img src="http://www.fillmurray.com/200/200" class="image"/>
-      <h4 data-ng-model="userProfileViewModel.user.username" class="user-name">OhSheila!</h4>
+      <h4>{{userProfileViewModel.user.username}}</h4>
       <p class="user-email">OhSheilaJ@gmail.com</p>
       <p class="user-city user-state">Washington, DC</h3>
       <p class="user-country">United States</p>
@@ -55,26 +55,28 @@
             <td> <button type="button" class="found-button"> Found </button>
             </td>
           </tr>
+          <tr>
+            <td><div class="items-container" data-ng-repeat="item in userProfileViewModel.items">
+              <img src="https://files.slack.com/files-tmb/T0351JZQ0-F0YLSQNJW-3b53f495c7/rolleiflex-1_720.jpg" class="item-image"/></td>
+              <td> <input type="text" class="one-forth-input item-name" name="item-name">{{item.name}}</input></td>
+              <td> <input type="text" class="one-forth-input item-name" name="barcode">{{item.barcode}}</input></td>
+              <td> <button type="button" class="lost-button"> Lost </button>
+              <td> <button type="button" class="found-button"> Found </button>
+            </div>
+            </td>
+          </tr>
         </table>
       </form>
 <table >
       <!-- creating register button and generating random number -->
       <tr>
         <td>
-         <p class="register">Register New item:</p> <input type="text" class="items-list" name="item-name" placeholder="Item Name...." style="padding: 5px 8px;" data-ng-model=userProfileViewModel.newItem.name/>
+         <p class="register">Register New item:</p> <input type="text" class="items-list" name="item-name" placeholder="Item Name...." style="padding: 5px 13px;" data-ng-model="userProfileViewModel.newItem.name"></input>
       </td>
         <td>
       <button type="button"  class="register-button" data-ng-click="userProfileViewModel.addItem()"> Register </button>
-       <p id="list-of-items"></p>
       </td>
       </tr>
     </table>
-
-
-      <!-- hardcoded items -->
-        <div class="items-container" data-ng-repeat="item in userProfileViewModel.items">
-            <p>{{item.name}}</p>
-            <p>{{item.barcode}}</p>
-        </div>
     </div>
   </div>
