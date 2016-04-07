@@ -8,39 +8,25 @@
   ])
   .controller("userProfileController",[
     "UserFactory",
+    "ItemFactory",
     "$stateParams",
+    "$state",
     userProfileControllerFunction
   ]);
 
-  function userProfileControllerFunction(User, $stateParams){
+  function userProfileControllerFunction(User, Item, $stateParams, $state){
     var userVM = this;
-    this.items = []
-    User.all.$promise.then(function(){
-      User.all.forEach(function(user){
-        if(user.id == $stateParams.id){
-          console.log("found user", user)
-          userVM.newItem = {};
-          userVM.addItem = function () {
-             userVM.newItem.barcode = Math.floor((Math.random() * 100000) + 10000);
-             userVM.newItem.name = userVM.newItem.name
-             userVM.items.push(angular.copy(userVM.newItem))
-             userVM.newItem = {}
-             console.log(newItem.name)
-          }
-          userVM.user=user;
-        }
-      });
-    });
+    User.get({id: $stateParams.id}).$promise.then(function(user){
+      userVM.user = user
+      userVM.items = user.items
+    })
+    userVM.newItem = new Item()
+    userVM.addItem = function() {
+      userVM.newItem.barcode = Math.floor((Math.random() * 100000) + 10000);
+      userVM.newItem.user_id = $stateParams.id //not doing exactly what we think
+      userVM.newItem.$save().then(function(item){
+        $state.go("userProfileIndex", {}, {reload: true})
+      })
     }
-
-  // function showCtrlFunction(Destination, $stateParams){
-  //   var showVM = this;
-  //   Destination.all.$promise.then(function(){
-  //     Destination.all.forEach(function(destination){
-  //       if(destination.id == $stateParams.id){
-  //         showVM.destination = destination;
-  //       }
-  //     });
-  //   });
-  // }
+  }
 })();
