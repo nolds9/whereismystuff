@@ -8,6 +8,10 @@ angular
 ]);
 
 function lostItemControllerFunction(){
-  console.log("this is where lost item is shown");
+  this.profile_reroute = function () {
+    this.item = UserFactory.get({id: parseInt(this.item.id)}).$promise.then(function(user){
+      $state.go("userProfileIndex", {id: parseInt(this.user_id.id)})
+    }.bind(this))
+  }
 }
 })();

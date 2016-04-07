@@ -5,8 +5,8 @@
       <img src="http://www.fillmurray.com/200/200" class="image"/>
       <h4>{{userProfileViewModel.user.username}}</h4>
       <p class="user-email">{{userProfileViewModel.user.email}}</p>
-      <p class="user-city user-state">{{userProfileViewModel.user.state}}</h3>
-      <p class="user-country">United States</p>
+      <p class="user-city user-state">{{userProfileViewModel.user.city}} , {{userProfileViewModel.user.state}}</h3>
+      <p class="user-country">{{userProfileViewModel.user.country}}</p>
     </div>
 
     <div class="user-profile">
@@ -23,7 +23,7 @@
 
 
 
-            <td> <button type="button" class="lost-button"> Lost </button>
+            <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
 
             <td> <button type="button" class="found-button"> Found </button>
 
@@ -34,7 +34,7 @@
             <td><img src="https://files.slack.com/files-pri/T0351JZQ0-F0YLE1524/suitcase.jpg" class="item-image"/></td>
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="suitcase"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#452324"></input></td>
-            <td> <button type="button" class="lost-button"> Lost </button>
+            <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
             <td> <button type="button" class="found-button"> Found </button>
             </td>
           </tr>
@@ -42,7 +42,7 @@
             <td><img src="https://files.slack.com/files-tmb/T0351JZQ0-F0YJZ7NMR-394d1f20c5/pasted_image_at_2016_04_06_23_47_360.png" class="item-image"/></td>
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="laptop"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#112131"></input></td>
-            <td> <button type="button" class="lost-button"> Lost </button>
+            <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button><a>
             <td> <button type="button" class="found-button"> Found </button>
             </td>
           </tr>
@@ -51,16 +51,16 @@
             <td><img src="https://files.slack.com/files-tmb/T0351JZQ0-F0YLSQNJW-3b53f495c7/rolleiflex-1_720.jpg" class="item-image"/></td>
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="camera"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#981341"></input></td>
-            <td> <button type="button" class="lost-button"> Lost </button>
+            <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
             <td> <button type="button" class="found-button"> Found </button>
             </td>
           </tr>
           <tr data-ng-repeat="item in userProfileViewModel.items">
             <td><div class="items-container">
               <img src="https://files.slack.com/files-tmb/T0351JZQ0-F0YLSQNJW-3b53f495c7/rolleiflex-1_720.jpg" class="item-image"/></td>
-              <td>{{item.name}}</td>
-              <td>{{item.barcode}}</td>
-              <td> <button type="button" class="lost-button"> Lost </button>
+              <td class="new_input">{{item.name}}</td>
+              <td class="new_input">{{item.barcode}}</td>
+              <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
               <td> <button type="button" class="found-button"> Found </button>
             </div>
             </td>
