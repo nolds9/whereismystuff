@@ -25,7 +25,7 @@
 
             <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
 
-            <td> <button type="button" class="found-button"> Found </button>
+            <td> <a data-ui-sref="itemReceivedIndex"><button type="button" class="found-button"> Found </button></a>
 
             </td>
           </tr>
@@ -35,7 +35,7 @@
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="suitcase"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#452324"></input></td>
             <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
-            <td> <button type="button" class="found-button"> Found </button>
+            <td> <a data-ui-sref="itemReceivedIndex"><button type="button" class="found-button"> Found </button></a>
             </td>
           </tr>
           <tr>
@@ -43,7 +43,7 @@
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="laptop"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#112131"></input></td>
             <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button><a>
-            <td> <button type="button" class="found-button"> Found </button>
+            <td> <a data-ui-sref="itemReceivedIndex"><button type="button" class="found-button"> Found </button></a>
             </td>
           </tr>
 
@@ -52,7 +52,7 @@
             <td> <input type="text" class="one-forth-input item-name" name="item-name" placeholder="camera"></input></td>
             <td> <input type="text" class="one-forth-input item-name" name="barcode" placeholder="#981341"></input></td>
             <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
-            <td> <button type="button" class="found-button"> Found </button>
+            <td> <a data-ui-sref="itemReceivedIndex"><button type="button" class="found-button"> Found </button></a>
             </td>
           </tr>
           <tr data-ng-repeat="item in userProfileViewModel.items">
@@ -61,7 +61,7 @@
               <td class="new_input">{{item.name}}</td>
               <td class="new_input">{{item.barcode}}</td>
               <td> <a data-ui-sref="lostItemIndex"><button type="button" class="lost-button"> Lost </button></a>
-              <td> <button type="button" class="found-button"> Found </button>
+              <td> <a data-ui-sref="itemReceivedIndex"><button type="button" class="found-button"> Found </button></a>
             </div>
             </td>
           </tr>
