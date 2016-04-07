@@ -22,9 +22,10 @@
           userVM.newItem = {};
           userVM.addItem = function () {
              userVM.newItem.barcode = Math.floor((Math.random() * 100000) + 10000);
-             userVM.newItem.name = this.newItem.name
-             userVM.items.push(angular.copy(this.newItem))
+             userVM.newItem.name = userVM.newItem.name
+             userVM.items.push(angular.copy(userVM.newItem))
              userVM.newItem = {}
+             console.log(newItem.name)
           }
           userVM.user=user;
         }
