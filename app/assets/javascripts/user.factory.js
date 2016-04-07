@@ -9,7 +9,9 @@
   ]);
 
   function ResourceFactoryFunction($resource) {
-    return $resource("http://localhost:3000/users/:id.json")
+    var User = $resource("http://localhost:3000/users/:id.json")
+    User.all = User.query();
+    return User;
 
   };
 }());
