@@ -7,6 +7,5 @@
     thanksForReportingControllerFunction
   ]);
   function thanksForReportingControllerFunction(){
-    console.log("thanks for reporting");
   }
 })();

@@ -4,10 +4,12 @@
   angular
   .module("userProfile",[])
   .controller("userProfileController",[
+    "userFactory",
     userProfileControllerFunction
   ]);
 
-  function userProfileControllerFunction(){
+  function userProfileControllerFunction(userFactory){
+    this.users= userFactory.query();
     console.log("User profile works");
     this.items = [
        {name: "backpack", barcode: 122345},
