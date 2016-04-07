@@ -14,8 +14,15 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.create!(item_params)
-    redirect_to item_url(@item)
+    @item = Item.new(item_params)
+    respond_to do |format|
+      if @item.save
+        format.json{render json: @item, status: :created, location: @item}
+      else
+        format.html{render :new}
+        format.json{render json: @item.errors, status: :unprocessable_entity}
+      end
+    end
   end
 
   def show
@@ -44,7 +51,7 @@ class ItemsController < ApplicationController
 
   private
   def item_params
-    params.require(:item).permit(:name, :barcode, :photo_url)
+    params.require(:item).permit(:name, :barcode, :photo_url, :user_id)
   end
 
 end
