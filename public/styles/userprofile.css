@@ -62,7 +62,7 @@ body {
   width: 75px;
 }
 
-.found-button {
+.found-button, .register-button {
   padding: 3px 0px;
   background-color: #FF5722;
   color: white;
@@ -76,4 +76,10 @@ body {
   display: inline-block;
   float: right;
   padding-right: 15%;
+}
+.register {
+  padding-left: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline;
 }
