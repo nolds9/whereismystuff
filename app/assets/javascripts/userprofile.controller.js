@@ -4,7 +4,7 @@
   angular
   .module("userProfile",[])
   .controller("userProfileController",[
-    "userFactory",
+    "UserFactory",
     userProfileControllerFunction
   ]);
 
@@ -27,6 +27,21 @@
        this.items.push(angular.copy(this.newItem))
        this.newItem = {}
     }
-
   }
 })();
+
+// "use strict";
+//
+// (function(){
+//   angular
+//   .module("userProfile")
+//   .controller("userProfileController", [
+//     "UserFactory",
+//     "$stateParams",
+//     userProfileControllerFunction
+//   ]);
+//
+//   function userProfileControllerFunction(userFactory, $stateParams){
+//     this.user = userFactory.get({id: $stateParams.id});
+//   }
+// }());
