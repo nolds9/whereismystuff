@@ -3,7 +3,7 @@
 <div id="wrapper">
       <div id="profile-image">
       <img src="http://www.fillmurray.com/200/200" class="image"/>
-      <h4 data-ng-model="userProfileViewModel.user.username" class="user-name">OhSheila!</h4>
+      <h4>{{userProfileViewModel.user.username}}</h4>
       <p class="user-email">OhSheilaJ@gmail.com</p>
       <p class="user-city user-state">Washington, DC</h3>
       <p class="user-country">United States</p>
@@ -61,7 +61,7 @@
       <!-- creating register button and generating random number -->
       <tr>
         <td>
-         <p class="register">Register New item:</p> <input type="text" class="items-list" name="item-name" placeholder="Item Name...." style="padding: 5px 8px;" data-ng-model=userProfileViewModel.newItem.name/>
+         <p class="register">Register New item:</p> <input type="text" class="items-list" name="item-name" placeholder="Item Name...." style="padding: 5px 13px;" data-ng-model="userProfileViewModel.newItem.name"></input>
       </td>
         <td>
       <button type="button"  class="register-button" data-ng-click="userProfileViewModel.addItem()"> Register </button>
