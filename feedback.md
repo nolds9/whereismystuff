@@ -1,6 +1,6 @@
 # Project 3 Evaluation
 
-[inline code comments]()
+Please review [inline code comments](https://github.com/Bneupane/whereismystuff/compare/master...nolds9:feedback) prefixed with my initials `NHO`
 
 ## Back-end Technology
 
