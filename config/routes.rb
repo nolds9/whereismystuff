@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
   root to: "stuff#index"
+  # NHO: does it make sense to nest these routes? Theoritically will you need to find all the items
+  # / or only the items associated to a specific user
+  
   resources :users
   resources :items
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

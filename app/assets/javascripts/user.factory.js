@@ -9,7 +9,8 @@
   ]);
 
   function ResourceFactoryFunction($resource) {
-    var User = $resource("http://localhost:3000/users/:id.json")
+    // NHO: shouldn't this url be relative...
+    var User = $resource("http://localhost:3000/users/:id.json") // NHO: support for update?
     User.all = User.query();
     return User;
 

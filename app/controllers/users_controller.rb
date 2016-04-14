@@ -39,6 +39,8 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
+        # NHO: looks like you might have trouble updating from the front end because your factory does not support it currently
+
         # format.html{redirect_to @user, notice: "User successfully updated."}
         format.json{render :show, status: :ok, location: @user}
       else

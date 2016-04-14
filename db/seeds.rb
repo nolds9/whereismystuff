@@ -8,6 +8,9 @@
 User.destroy_all
 Item.destroy_all
 
+# NHO: How could you update your seeds to dynamically generate users and items associated to random users?
+# Currently, all the items belong only one user...
+
 user_data = JSON.parse(File.read("db/user_data.json"))
 item_data = JSON.parse(File.read("db/item_data.json"))
 

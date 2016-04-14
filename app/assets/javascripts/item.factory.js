@@ -9,6 +9,6 @@
  ]);
 
  function ResourceFactoryFunction($resource) {
-   return $resource("/items/:id.json")
+   return $resource("/items/:id.json") // NHO: support for update?
  };
 }());

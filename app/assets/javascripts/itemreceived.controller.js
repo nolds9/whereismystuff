@@ -1,5 +1,6 @@
 "use strict";
 
+// NHO: careful of identation
 (function(){
 angular
 .module("itemReceived",[])

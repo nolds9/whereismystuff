@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
-
+  # NHO: one thing to consider, what format of requests do you need to respond to....
+  # In other words, which format do you only need to support -> probably JSON
   def index
     @items = Item.all
     respond_to do |format|
